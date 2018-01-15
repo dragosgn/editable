@@ -4,11 +4,17 @@
   "description": "One click edit react component for forms and input fields",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "babel src -d build"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/dragosgn/editable.git"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   },
   "keywords": [
     "One",
