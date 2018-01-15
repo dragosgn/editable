@@ -1,20 +1,30 @@
 import React from "react"
-import {compose} from "recompose"
 
-export default(WrappedComponent) => (
-  return class extends React.Component {
-    constructor(props){
-      super(props)
-      this.enterEdit = this.enterEdit.bind(this)
+export default(WrappedComponent) => (return class extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      edit: false
     }
 
-    enterEdit() {
+    this.enterEdit = this.enterEdit.bind(this)
+    this.exitEdit = this.exitEdit.bind(this)
+  }
 
-    }
+  enterEdit() {
+    this.setState({
+      edit: true
+    })
+  }
 
-    render() {
-      return(
-        <WrappedComponent {...this.props} enterEdit={this.enterEdit}>
+  exitEdit() {
+    this.setState({
+      edit: false
+    })
+  }
+
+  render() {
+    return (<WrappedComponent {...this.props} enterEdit={this.enterEdit}>
       )
     }
   }
