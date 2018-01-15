@@ -1,0 +1,25 @@
+{
+  "name": "editable",
+  "version": "1.0.0",
+  "description": "One click edit react component for forms and input fields",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dragosgn/editable.git"
+  },
+  "keywords": [
+    "One",
+    "click",
+    "edit",
+    "field"
+  ],
+  "author": "Dragos Nedelcu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragosgn/editable/issues"
+  },
+  "homepage": "https://github.com/dragosgn/editable#readme"
+}
